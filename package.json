@@ -1,0 +1,29 @@
+{
+  "name": "js-game",
+  "version": "1.0.0",
+  "description": "an attempt to create a js game for desktop browsers, android apk and Oculus Quest (VR).",
+  "main": "src/server/index.js",
+  "scripts": {"start": "node src\/server\/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Machine-3R@github.com/Machine-3R/js-game.git"
+  },
+  "keywords": [
+    "js",
+    "vr",
+    "babylonjs",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Machine-3R/js-game/issues"
+  },
+  "homepage": "https://github.com/Machine-3R/js-game#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pem": "^1.14.4"
+  }
+}
