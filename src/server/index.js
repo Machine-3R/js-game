@@ -8,7 +8,6 @@ pem.createCertificate({days: 1, selfSigned: true}, function (err, keys) {
     }
     var app = express();
     app.use(express.static('public'));
-    app.use(express.static('public/views'));
 
     https
         .createServer({key: keys.serviceKey, cert: keys.certificate}, app)
