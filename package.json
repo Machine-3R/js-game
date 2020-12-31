@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "an attempt to create a js game for desktop browsers, android apk and Oculus Quest (VR).",
   "main": "src/server/index.js",
-  "scripts": {"start": "node src\/server\/index.js",
+  "scripts": {
+    "start": "node src/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +25,9 @@
   "homepage": "https://github.com/Machine-3R/js-game#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "pem": "^1.14.4"
+    "express-ws": "^4.0.0",
+    "path": "^0.12.7",
+    "pem": "^1.14.4",
+    "socket.io": "^3.0.4"
   }
 }

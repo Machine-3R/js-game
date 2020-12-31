@@ -2,8 +2,23 @@
 <html>
     <head>
         <title>TODO supply a title</title>
+        <link rel="shortcut icon" href="#">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="module">
+            import('/socket.io/socket.io.js')
+                .then((module) => {
+                    var socket = io();
+                    socket
+                        .on('hi', message => {
+                            document.body.textContent = message;
+                            socket.emit('hello', "Nice to be here.");
+                        });
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+        </script>
     </head>
     <body>
         TO DO
